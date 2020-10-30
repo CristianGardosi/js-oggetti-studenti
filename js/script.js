@@ -45,3 +45,20 @@ for (var i = 0; i < arrayStudenti.length; i++) {
     // Sulla falsa riga di questo ragionamento in un array di oggetti per estrapolare il valore che desidero devo fare questa operazione
     console.log('Nome: ' + arrayStudenti[i].nome, 'Cognome: ' + arrayStudenti[i].cognome)
 }
+
+
+// INSERIMENTO DI UN NUOVO OGGETTO NELL'ARRAY DA PARTE DELL'UTENTE
+// Prompt di richiesta dati
+var nome = prompt('Inserire nome').trim();
+var cognome = prompt('Inserire cognome').trim();
+var età = parseInt( prompt('Inserire età') );
+//Inserimento dati ottenuti
+var nuovoStudente = {};
+nuovoStudente.nome = nome;
+nuovoStudente.cognome = cognome;
+nuovoStudente.età = età;
+// Pusho dati ottenuti nell'array
+arrayStudenti.push(nuovoStudente);
+// Ristampo i miei oggetti con i relativi valori che mi interessano (nome / cognome) comprensivi della nuova aggiunta
+console.log(arrayStudenti[i]);
+console.log('Nome: ' + arrayStudenti[i].nome, 'Cognome: ' + arrayStudenti[i].cognome)
